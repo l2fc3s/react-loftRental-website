@@ -1,6 +1,6 @@
 .landing-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../images/toa-heftiba-FV3GConVSss-unsplash.jpg);
+    url(../../images/toa-heftiba-FV3GConVSss-unsplash.jpg);
   height: 100vh;
   width: 100%;
   display: flex;
