@@ -28,6 +28,7 @@ function NavBar() {
             <p>LOFT</p>
             <i class="fab fa-unsplash"></i>
           </Link>
+
           <div className="mobile-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>

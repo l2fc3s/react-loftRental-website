@@ -16,7 +16,12 @@ function About() {
           Modern design, contact-free service, and exceptional comfort with more
           space to live, work, and play.
         </p>
-        <Button buttonStyle="btn--dark">Learn more</Button>
+
+        <div className="button-container">
+          <Button buttonSize="btn--medium" buttonStyle="btn--dark">
+            Learn more
+          </Button>
+        </div>
       </div>
 
       <div className="about-image">

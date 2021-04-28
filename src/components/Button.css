@@ -3,9 +3,9 @@
 }
 
 .btn {
-  height: 40px;
-  width: 80px;
-  /* padding: 8px 20px; */
+  /* height: 40px;
+  width: 80px; */
+  padding: 8px 20px;
   border-radius: 20px;
   outline: none;
   border: none;
@@ -26,9 +26,9 @@
   transition: all 0.3s ease-out;
 }
 
-btn--medium {
-  /* padding: 8px 20px; */
-  font-size: 20px;
+.btn--medium {
+  padding: 8px 20px;
+  font-size: 18px;
 }
 
 .btn--large {
