@@ -6,6 +6,7 @@ import { Button } from "./Button";
 function NavBar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
+  const [navbar, setNavbar] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -20,9 +21,15 @@ function NavBar() {
 
   window.addEventListener("resize", showButton);
 
+  const navbarShadow = () => {
+    window.scrollY >= 60 ? setNavbar(true) : setNavbar(false);
+  };
+
+  window.addEventListener("scroll", navbarShadow);
+
   return (
     <>
-      <nav className="navbar">
+      <nav className={navbar ? "navbar active" : "navbar"}>
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <p>LOFT</p>

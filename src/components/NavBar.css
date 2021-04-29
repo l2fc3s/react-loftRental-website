@@ -9,6 +9,10 @@
   z-index: 999;
 }
 
+.navbar.active {
+  box-shadow: 0px 0px 5px #acacac;
+}
+
 .navbar-container {
   display: flex;
   justify-content: center;
