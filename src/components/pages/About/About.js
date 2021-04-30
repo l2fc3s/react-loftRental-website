@@ -1,9 +1,9 @@
 import React from "react";
 import "./About.css";
-import img from "../../images/daniil-silantev-sN4u56baSB0-unsplash.jpg";
-import { Button } from "../Button";
+import { Button } from "../../Button";
+import image from "../../../images/daniil-silantev-sN4u56baSB0-unsplash.jpg";
 
-function About() {
+function About({ headline, description }) {
   return (
     // solid bg
     // headline
@@ -11,11 +11,8 @@ function About() {
     // image on right
     <div className="about-container">
       <div className="about-text">
-        <h1 className="about-headline">A better way to stay</h1>
-        <p>
-          Modern design, contact-free service, and exceptional comfort with more
-          space to live, work, and play.
-        </p>
+        <h1 className="about-headline">{headline}</h1>
+        <p>{description}</p>
 
         <div className="button-container">
           <Button buttonSize="btn--medium" buttonStyle="btn--dark">
@@ -25,7 +22,7 @@ function About() {
       </div>
 
       <div className="about-image">
-        <img className="img" src={img} alt="Image" />
+        <img className="img" src={image} alt="chair" />
       </div>
     </div>
   );
