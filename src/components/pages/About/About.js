@@ -5,10 +5,6 @@ import image from "../../../images/daniil-silantev-sN4u56baSB0-unsplash.jpg";
 
 function About({ headline, description }) {
   return (
-    // solid bg
-    // headline
-    // short paragraph on left
-    // image on right
     <div className="about-container">
       <div className="about-text">
         <h1 className="about-headline">{headline}</h1>

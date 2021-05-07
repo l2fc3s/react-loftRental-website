@@ -1,5 +1,5 @@
 export const aboutObjOne = {
-  headline: "A better way to stay",
+  headline: "Lorem ipsum dolor amet",
   description:
-    "Modern design, contact-free service, and exceptional comfort with more space to live, work, and play.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla eros erat, a placerat nulla molestie quis. Duis rhoncus leo eu erat volutpat suscipit at luctus ligula. Integer at nunc vitae nunc vestibulum lobortis. Nam lacinia mauris velit, sed.",
 };
