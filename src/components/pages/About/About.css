@@ -67,21 +67,22 @@
 }
 
 @media screen and (max-width: 740px) {
-  .about-image {
+  .img {
+    width: 100%;
+    height: auto;
+    /* max-height: 90%; */
     position: static;
   }
 
-  .img {
-    position: static;
-    width: 100%;
-    height: auto;
+  .about-image {
+    margin: 0;
+    padding: 0;
   }
 
   .about-text {
     margin: 0;
-    padding: 0;
     width: 100%;
-    padding: 0 30px;
+    padding: 15px 30px 15px 30px;
   }
 
   Button {

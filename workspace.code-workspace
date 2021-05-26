@@ -1,0 +1,17 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../react-website"
+	},
+	{
+		"path": "../react-blog"
+	},
+	{
+		"path": "../react-website-2"
+	}
+],
+  "settings": {}
+}
