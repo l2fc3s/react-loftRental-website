@@ -1,18 +1,48 @@
+import ImageOne from "../images/slider images/image1.jpg";
+import ImageTwo from "../images/slider images/image2.jpg";
+import ImageThree from "../images/slider images/image3.jpg";
+import ImageFour from "../images/slider images/image4.jpg";
+import ImageFive from "../images/slider images/image5.jpg";
+
 export const SliderData = [
   {
-    image:
-      "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
+    title: "Luxury space in San Francisco",
+    path: "/login",
+    label: "View space",
+    image: "ImageOne",
+    price: "From $2200",
+    alt: "Loft Space",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1470341223622-1019832be824?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2288&q=80",
+    title: "Modern home in New Orleans ",
+    path: "/login",
+    label: "View space",
+    image: ImageTwo,
+    price: "From $1300",
+    alt: "Loft Space",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2094&q=80",
+    title: "Urban views in New York",
+    path: "/login",
+    label: "View space",
+    image: ImageThree,
+    price: "From $2100",
+    alt: "Loft Space",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1534161308652-fdfcf10f62c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2174&q=80",
+    title: "Rustic loft in Atlanta",
+    path: "/login",
+    label: "View space",
+    image: ImageFour,
+    price: "From $1400",
+    alt: "Loft Space",
+  },
+  {
+    title: "Spacious loft in Seattle",
+    path: "/login",
+    label: "View space",
+    image: ImageFive,
+    price: "From $2200",
+    alt: "Loft Space",
   },
 ];
