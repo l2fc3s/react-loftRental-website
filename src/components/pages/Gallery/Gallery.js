@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { SliderData } from "../../SliderData";
+import React, { useState, useRef, useEffect } from "react";
 import "./Gallery.css";
 import styled, { css } from "styled-components/macro";
 import { Button } from "../../Button";
@@ -91,7 +90,11 @@ const GalleryContent = styled.div`
   }
 `;
 
-const Arrow = styled(IoMdArrowRoundForward)``;
+const Arrow = styled(IoMdArrowRoundForward)`
+  margin-left: 0.2rem;
+  position: relative;
+  top: 3.1px;
+`;
 
 const SliderButtons = styled.div`
   position: absolute;
@@ -127,36 +130,69 @@ const NextArrow = styled(IoChevronForwardCircle)`
 `;
 
 function Gallery({ slides }) {
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
+  const timeout = useRef(null);
+
+  useEffect(() => {
+    const nextImage = () => {
+      setCurrent((current) => (current === length - 1 ? 0 : current + 1));
+    };
+
+    timeout.current = setTimeout(nextImage, 3000);
+
+    return function () {
+      if (!timeout.current) {
+        clearTimeout(timeout.current);
+      }
+    };
+  }, [current, length]);
+
+  const nextSlide = () => {
+    if (!timeout.current) {
+      clearTimeout(timeout.current);
+    }
+
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const prevSlide = () => {
+    if (!timeout.current) {
+      clearTimeout(timeout.current);
+    }
+
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  if (!Array.isArray(slides) || length <= 0) {
+    return null;
+  }
+
   return (
     <GallerySection>
       <GalleryWrapper>
         {slides.map((slide, index) => {
           return (
             <GallerySlide key={index}>
-              <GallerySlider>
-                <GalleryImage src={slide.image} alt={slide.alt} />
-                {/* <img src={slide.image} /> */}
-                <GalleryContent>
-                  <h1>{slide.title}</h1>
-                  <p>{slide.price}</p>
-                  <Button
-                    buttonSize="btn"
-                    to={slide.path}
-                    css={`
-                      max-width: 60px;
-                    `}
-                  >
-                    {slide.label}
-                    <Arrow />
-                  </Button>
-                </GalleryContent>
-              </GallerySlider>
+              {index === current && (
+                <GallerySlider>
+                  <GalleryImage src={slide.image} alt={slide.alt} />
+                  <GalleryContent>
+                    <h1>{slide.title}</h1>
+                    <p>{slide.price}</p>
+                    <Button buttonSize="btn" to={slide.path}>
+                      {slide.label}
+                      <Arrow />
+                    </Button>
+                  </GalleryContent>
+                </GallerySlider>
+              )}
             </GallerySlide>
           );
         })}
         <SliderButtons>
-          <PrevArrow />
-          <NextArrow />
+          <PrevArrow onClick={prevSlide} />
+          <NextArrow onClick={nextSlide} />
         </SliderButtons>
       </GalleryWrapper>
     </GallerySection>

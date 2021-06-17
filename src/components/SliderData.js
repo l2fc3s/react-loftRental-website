@@ -9,7 +9,7 @@ export const SliderData = [
     title: "Luxury space in San Francisco",
     path: "/login",
     label: "View space",
-    image: "ImageOne",
+    image: ImageOne,
     price: "From $2200",
     alt: "Loft Space",
   },
