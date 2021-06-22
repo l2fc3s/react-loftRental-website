@@ -107,9 +107,9 @@ const SliderButtons = styled.div`
 const arrowButtons = css`
   width: 30px;
   height: 30px;
-  color: #fff;
+  color: #565656;
   cursor: pointer;
-  background: #000d1a;
+  background: #fff;
   border-radius: 50px;
   // padding: 10px;
   margin-right: 1rem;
@@ -117,7 +117,7 @@ const arrowButtons = css`
   transition: 0.3s;
 
   &:hover {
-    background: #cd853f;
+    background: #c09f80;
     transform: scale(1.05);
   }
 `;
@@ -142,14 +142,14 @@ function Gallery({ slides }) {
     timeout.current = setTimeout(nextImage, 3000);
 
     return function () {
-      if (!timeout.current) {
+      if (timeout.current) {
         clearTimeout(timeout.current);
       }
     };
   }, [current, length]);
 
   const nextSlide = () => {
-    if (!timeout.current) {
+    if (timeout.current) {
       clearTimeout(timeout.current);
     }
 
@@ -157,7 +157,7 @@ function Gallery({ slides }) {
   };
 
   const prevSlide = () => {
-    if (!timeout.current) {
+    if (timeout.current) {
       clearTimeout(timeout.current);
     }
 
