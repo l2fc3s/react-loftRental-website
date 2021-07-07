@@ -169,7 +169,7 @@ function Gallery({ slides }) {
   }
 
   return (
-    <GallerySection>
+    <GallerySection id="gallerySection">
       <GalleryWrapper>
         {slides.map((slide, index) => {
           return (

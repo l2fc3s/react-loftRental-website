@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
+import { HashLink } from "react-router-hash-link";
 
 function NavBar() {
   const [click, setClick] = useState(false);
@@ -31,71 +32,82 @@ function NavBar() {
     <>
       <nav className={navbar ? "navbar active" : "navbar"}>
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <HashLink
+            smooth
+            to="/"
+            className="navbar-logo"
+            onClick={closeMobileMenu}
+          >
             <p>LOFT</p>
             <i className="fab fa-unsplash"></i>
-          </Link>
+          </HashLink>
 
           <div className="mobile-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            {/* <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                Home
-              </Link>
-            </li> */}
-
             <li className="nav-item">
-              <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+              <HashLink
+                smooth
+                to="#about-section"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
                 About Us
-              </Link>
+              </HashLink>
             </li>
 
             <li className="nav-item">
-              <Link
-                to="/gallery"
+              <HashLink
+                smooth
+                to="#gallerySection"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Gallery
-              </Link>
+              </HashLink>
             </li>
 
             <li className="nav-item">
-              <Link
-                to="/contact"
+              <HashLink
+                smooth
+                to="#footer"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Contact
-              </Link>
+              </HashLink>
             </li>
 
             <li className="nav-item">
-              <Link
-                to="/sign-in"
+              <HashLink
+                smooth
+                to="#footer"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Sign in
-              </Link>
+              </HashLink>
             </li>
             <li>
-              <Link
-                to="/sign-up"
+              <HashLink
+                smooth
+                to="#footer"
                 className="nav-links sign-up"
                 onClick={closeMobileMenu}
               >
                 Sign Up
-              </Link>
+              </HashLink>
             </li>
             <li className="signup-button">
-              {button && <Button buttonStyle="btn--dark">Sign up</Button>}
+              {button && (
+                <HashLink smooth to="#footer">
+                  <Button buttonStyle="btn--dark">Sign up</Button>
+                </HashLink>
+              )}
             </li>
           </ul>
-          {/* {button && <Button buttonStyle="btn--dark">Sign up</Button>} */}
         </div>
       </nav>
     </>

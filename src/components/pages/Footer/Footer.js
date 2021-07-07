@@ -2,10 +2,14 @@ import React from "react";
 import { Button } from "../../Button";
 import { Link } from "react-router-dom";
 import "./Footer.css";
+import { HashLink } from "react-router-hash-link";
 
 export const Footer = () => {
   return (
-    <div className="footer-container">
+    <div id="footer" className="footer-container">
+      <HashLink className="arrow-icon" smooth to="#landing">
+        <i className="fas fa-chevron-circle-up"></i>
+      </HashLink>
       <section className="footer-subscribe">
         <h1 className="footer-subscription-header">
           Join our newsletter to stay up to date on our listings
