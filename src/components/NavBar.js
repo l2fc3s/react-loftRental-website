@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./NavBar.css";
-import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import { HashLink } from "react-router-hash-link";
 
