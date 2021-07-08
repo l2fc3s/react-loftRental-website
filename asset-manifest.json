@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-loftRental-website/static/css/main.f64bccbd.chunk.css",
-    "main.js": "/react-loftRental-website/static/js/main.f63e473f.chunk.js",
-    "main.js.map": "/react-loftRental-website/static/js/main.f63e473f.chunk.js.map",
+    "main.js": "/react-loftRental-website/static/js/main.a20fced0.chunk.js",
+    "main.js.map": "/react-loftRental-website/static/js/main.a20fced0.chunk.js.map",
     "runtime-main.js": "/react-loftRental-website/static/js/runtime-main.88cdf391.js",
     "runtime-main.js.map": "/react-loftRental-website/static/js/runtime-main.88cdf391.js.map",
     "static/js/2.05f19d53.chunk.js": "/react-loftRental-website/static/js/2.05f19d53.chunk.js",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.88cdf391.js",
     "static/js/2.05f19d53.chunk.js",
     "static/css/main.f64bccbd.chunk.css",
-    "static/js/main.f63e473f.chunk.js"
+    "static/js/main.a20fced0.chunk.js"
   ]
 }
