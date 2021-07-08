@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-loftRental-website/static/css/main.f64bccbd.chunk.css",
-    "main.js": "/react-loftRental-website/static/js/main.a20fced0.chunk.js",
-    "main.js.map": "/react-loftRental-website/static/js/main.a20fced0.chunk.js.map",
+    "main.js": "/react-loftRental-website/static/js/main.d73d6978.chunk.js",
+    "main.js.map": "/react-loftRental-website/static/js/main.d73d6978.chunk.js.map",
     "runtime-main.js": "/react-loftRental-website/static/js/runtime-main.88cdf391.js",
     "runtime-main.js.map": "/react-loftRental-website/static/js/runtime-main.88cdf391.js.map",
-    "static/js/2.05f19d53.chunk.js": "/react-loftRental-website/static/js/2.05f19d53.chunk.js",
-    "static/js/2.05f19d53.chunk.js.map": "/react-loftRental-website/static/js/2.05f19d53.chunk.js.map",
+    "static/js/2.8c597d80.chunk.js": "/react-loftRental-website/static/js/2.8c597d80.chunk.js",
+    "static/js/2.8c597d80.chunk.js.map": "/react-loftRental-website/static/js/2.8c597d80.chunk.js.map",
     "index.html": "/react-loftRental-website/index.html",
     "static/css/main.f64bccbd.chunk.css.map": "/react-loftRental-website/static/css/main.f64bccbd.chunk.css.map",
-    "static/js/2.05f19d53.chunk.js.LICENSE.txt": "/react-loftRental-website/static/js/2.05f19d53.chunk.js.LICENSE.txt",
+    "static/js/2.8c597d80.chunk.js.LICENSE.txt": "/react-loftRental-website/static/js/2.8c597d80.chunk.js.LICENSE.txt",
     "static/media/daniil-silantev-sN4u56baSB0-unsplash.b129530a.jpg": "/react-loftRental-website/static/media/daniil-silantev-sN4u56baSB0-unsplash.b129530a.jpg",
     "static/media/image1.91c54492.jpg": "/react-loftRental-website/static/media/image1.91c54492.jpg",
     "static/media/image2.8ce6fb04.jpg": "/react-loftRental-website/static/media/image2.8ce6fb04.jpg",
@@ -20,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.88cdf391.js",
-    "static/js/2.05f19d53.chunk.js",
+    "static/js/2.8c597d80.chunk.js",
     "static/css/main.f64bccbd.chunk.css",
-    "static/js/main.a20fced0.chunk.js"
+    "static/js/main.d73d6978.chunk.js"
   ]
 }
